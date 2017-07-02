@@ -15,10 +15,26 @@ class Button extends React.Component {
 render() {
     return(
         <button onClick={this.handleClick}>
-    {this.state.counter}
-</button>
-);
-}
+          {this.state.counter}
+        </button>
+    );
+  }
 }
 
-ReactDOM.render(<Button />, mountNode);
+const Result = (props) => {
+    return (
+        <div>...</div>
+    );
+};
+
+class App extends React.Component {
+    render() {
+        return (
+            <div>
+              <Button />
+              <Result />
+            </div>
+        );
+    }
+}
+ReactDOM.render(<App />, mountNode);
