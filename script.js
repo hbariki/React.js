@@ -1,10 +1,12 @@
 /**
  * Created by nmekala on 7/1/17.
  */
-const Button = (props) => {
-    return (
-      <button>Go</button>
-
-    );
+class Button extends React.Component {
+    state = { counter : 0 };
+    render() {
+        return (
+            <button>41</button>
+        );
+    }
 }
-ReactDOM.render(<Button />, mountNode);
+ReactDOM.render(<Button /> , mountNode);
